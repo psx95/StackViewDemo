@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,46 +16,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5pt-mb-MPd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="792"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="BaM-sR-KJo"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nxQ-LV-gXg">
-                                <rect key="frame" x="10" y="70" width="352.5" height="231"/>
+                                <rect key="frame" x="10" y="70" width="297.5" height="206"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dVW-0l-PzX">
-                                        <rect key="frame" x="0.0" y="0.0" width="352.5" height="78.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="297.5" height="78.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instant Developer" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzz-81-mPh">
-                                                <rect key="frame" x="21.5" y="0.0" width="309.5" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
-                                                <color key="textColor" red="0.86510281735751293" green="0.39532683446969324" blue="0.32200302817368309" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.9126457254" green="0.83632706570000004" blue="0.42636591959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get help from experts in 15 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSt-fN-f7Y">
-                                                <rect key="frame" x="40.5" y="58" width="272" height="20.5"/>
+                                                <rect key="frame" x="13" y="58" width="272" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.9353141191709845" green="0.73621375441378167" blue="0.46490145711223413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-vz-ob0">
-                                        <rect key="frame" x="0.0" y="90.5" width="352.5" height="140.5"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="297.5" height="115.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="hue-Uo-JgO">
-                                                <rect key="frame" x="0.0" y="0.0" width="104" height="140.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="115.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hue-Uo-JgO" secondAttribute="height" multiplier="50:67" id="Xhd-7i-Hee"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user2" translatesAutoresizingMaskIntoConstraints="NO" id="sKY-er-diN">
-                                                <rect key="frame" x="124" y="0.0" width="104.5" height="140.5"/>
+                                                <rect key="frame" x="106" y="0.0" width="85.5" height="115.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="sKY-er-diN" secondAttribute="height" multiplier="50:67" id="gLy-gE-bMK"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="9y7-XG-dJB">
-                                                <rect key="frame" x="248.5" y="0.0" width="104" height="140.5"/>
+                                                <rect key="frame" x="211.5" y="0.0" width="86" height="115.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9y7-XG-dJB" secondAttribute="height" multiplier="50:67" id="cJB-39-5Nr"/>
                                                 </constraints>
@@ -64,10 +70,32 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YI0-t2-rf2">
+                                <rect key="frame" x="63" y="455" width="194" height="98"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9y-cG-LLm">
+                                        <rect key="frame" x="0.0" y="0.0" width="194" height="44"/>
+                                        <color key="backgroundColor" red="0.9126457254" green="0.83632706570000004" blue="0.42636591959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="tintColor" red="0.15529873704663211" green="0.15529873704663211" blue="0.15529873704663211" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Log In"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkp-1b-d5Y">
+                                        <rect key="frame" x="0.0" y="54" width="194" height="44"/>
+                                        <color key="backgroundColor" red="0.9126457254" green="0.83632706570000004" blue="0.42636591959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="New Here? Sign Up"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nxQ-LV-gXg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="IbA-EL-wPp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YI0-t2-rf2" secondAttribute="bottom" constant="15" id="SGe-UZ-kQR"/>
+                            <constraint firstItem="YI0-t2-rf2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tsu-eh-ZGN"/>
                             <constraint firstItem="dVW-0l-PzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="eNz-FR-SzI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nxQ-LV-gXg" secondAttribute="trailing" constant="12.5" id="mM5-QY-R7Y"/>
                         </constraints>
@@ -76,9 +104,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="1080" height="1920"/>
         <image name="user1" width="100" height="136"/>
         <image name="user2" width="100" height="134"/>
         <image name="user3" width="100" height="139"/>
